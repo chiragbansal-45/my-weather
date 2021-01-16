@@ -28,6 +28,71 @@
   color: #61dafb;
 }
 
+.border {
+  box-shadow: 5px 10px 8px #888888;
+  padding: 2rem;
+  margin: 0px;
+  border-radius: 20px;
+}
+.padding {
+  margin: 2rem 1rem;
+}
+.margin {
+  margin: 2rem 1rem;
+  align-items: center;
+}
+.top-margin{
+  margin: .5rem 0;
+}
+.flex-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F6F5FA;
+  width: 100%;
+  max-width: 280px;
+  height: 100%;
+  max-height: 400px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.16);
+}
+.preview {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    margin: auto;
+}
+@media only screen and (min-width:600px){
+  .flex-container{
+    max-width: 472px;
+    max-height: 246px;
+  }
+  .inner-container{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .data {
+    align-self: center;
+  }
+  .preview{
+    max-width: 200px;
+  }
+}
+.inner-container{
+  display: flex;
+  
+  width: 100%;
+  padding: 2rem;
+
+}
+.image{
+  display: block;
+  align-self: center;
+  width: 7.875rem;
+  margin: 2rem 0;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
